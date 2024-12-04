@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Today | Stay Updated</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script src="script.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav id="main-nav">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="resources/logo.svg" alt="News Today Logo">
+      </a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." aria-label="Search">
+      <button type="submit" aria-label="Search Button"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="burger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="category.html">Category</a></li>
+      <li><a href="popular.html">Popular</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      <li>
+        <a href="join.html" class="btn btn-secondary">
+          <!-- Вставляем SVG вместо текста -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="7" r="4"></circle>
+            <path d="M5.5 19a7 7 0 0 1 13 0"></path>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Showcase -->
+<header id="showcase">
+  <div class="container">
+    <h1>Latest articles</h1>
+    <p>Stay updated with the latest developments from around the world. Check out the hottest trends and important updates below.</p>
+    <a href="article.html" class="btn btn-readmore">Read More</a>
+  </div>
+</header>
+
+<!-- Articles Section -->
+<section id="home-articles" class="py-2">
+  <div class="container">
+    <div class="articles-container">
+      <article class="card">
+        <a href="article.html">
+          <object type="image/svg+xml" data="resources/basket.svg"></object>
+          <div>
+            <h3>Article Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien eu bibendum consectetur, dolor tortor consectetur turpis, eu consectetur lorem libero sit amet ligula. Integer vitae odio a mi varius posuere. Aenean id turpis nulla.</p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="article.html">
+          <object type="image/svg+xml" data="resources/police.svg"></object>
+          <div>
+            <h3>Article Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien eu bibendum consectetur, dolor tortor consectetur turpis, eu consectetur lorem libero sit amet ligula. Integer vitae odio a mi varius posuere. Aenean id turpis nulla.</p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="article.html">
+          <object type="image/svg+xml" data="resources/tech.svg"></object>
+          <div>
+            <h3>Article Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien eu bibendum consectetur, dolor tortor consectetur turpis, eu consectetur lorem libero sit amet ligula. Integer vitae odio a mi varius posuere. Aenean id turpis nulla.</p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="article.html">
+          <object type="image/svg+xml" data="resources/trump.svg"></object>
+          <div>
+            <h3>Article Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien eu bibendum consectetur, dolor tortor consectetur turpis, eu consectetur lorem libero sit amet ligula. Integer vitae odio a mi varius posuere. Aenean id turpis nulla.</p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="article.html">
+          <object type="image/svg+xml" data="resources/breaking.svg"></object>
+          <div>
+            <h3>Article Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien eu bibendum consectetur, dolor tortor consectetur turpis, eu consectetur lorem libero sit amet ligula. Integer vitae odio a mi varius posuere. Aenean id turpis nulla.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="main-footer" class="py-2">
+  <div class="container footer-container">
+    <div>
+      <object type="image/svg+xml" data="resources/main_logo.svg" aria-label="News Today Logo"></object>
+      <p>Stay ahead with News Today - your source for the latest global updates.</p>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h3>Newsletter</h3>
+      <p>Get the latest updates delivered straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="submit" value="Subscribe" class="btn">
+      </form>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul class="list">
+        <li><a href="help.html">Help and Support</a></li>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Join the Community</h2>
+      <p>Connect with like-minded individuals who share your interests.</p>
+      <a href="join.html" class="btn btn-secondary">Join Now</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 News Today. All Rights Reserved.</p>
+<!--      <div class="svg-logo">-->
+<!--        <img src="resources/logo.svg" alt="Your SVG Description">-->
+<!--      </div>-->
+
+      </div>
+    </div>
+
+</footer>
+</body>
+</html>
