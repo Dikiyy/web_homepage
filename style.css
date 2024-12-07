@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family), serif;
   line-height: 1.6;
   background: var(--light-color);
   color: var(--dark-color);
@@ -43,7 +43,7 @@ img, object {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font-family);
+  font-family: var(--heading-font-family), serif;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   line-height: 1.3;
@@ -81,16 +81,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background: #fff;
   border: 1px solid var(--light-color);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform var(--transition-speed) ease;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .card object {
   width: 100%;
@@ -113,7 +113,16 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   transform: translateY(-5px);
 }
-
+.hottest-news {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  color: #ff4c4c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
 #showcase {
   display: flex;
@@ -247,6 +256,13 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+}
+#home-articles .articles-container .card:first-child {
+  grid-column: span 2;
+}
+
+#home-articles .articles-container .card:nth-child(2) {
+  grid-row: span 2;
 }
 
 footer {
