@@ -170,6 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
   gap: 10px;
   max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 #main-nav ul {
@@ -240,8 +241,14 @@ footer .social a:hover {
     box-sizing: border-box;
   }
 
+  #main-nav .logo img {
+    width: 150px;
+    height: auto;
+  }
+
   #main-nav .logo {
-    margin-right: auto;
+    display: flex;
+    align-items: center;
   }
 
   .burger {
