@@ -48,7 +48,6 @@
   </div>
 </nav>
 
-<!-- Showcase -->
 <header id="showcase">
   <div class="container">
     <h1>Latest articles</h1>
@@ -56,7 +55,6 @@
     <a href="article.html" class="btn btn-readmore">Read More</a>
   </div>
 </header>
-<!-- Most Read Articles Section -->
 <section id="most-read-articles" class="py-2">
   <div class="container">
     <h2 class="section-title">Most Read Articles</h2>
@@ -94,27 +92,22 @@
 <section id="hottest-news" class="py-2">
   <div class="container">
     <div class="categories-row">
-      <!-- Левые категории -->
       <div class="categories-left">
         <button class="category">Sports</button>
         <button class="category">Technology</button>
         <button class="category">Health</button>
       </div>
 
-      <!-- Заголовок Hottest News -->
       <h2 class="hottest-news">Hottest News</h2>
 
-      <!-- Правые категории -->
       <div class="categories-right">
         <button class="category">Politics</button>
         <button class="category">Entertainment</button>
         <button class="category">Science</button>
       </div>
     </div>
-    <!-- Карточки статей остаются как есть -->
   </div>
 </section>
-<!-- Articles Section -->
 <section id="home-articles" class="py-2">
   <div class="container">
     <div class="articles-container">
@@ -165,7 +158,6 @@
           </div>
         </a>
       </article>
-      <!-- Новые статьи -->
       <article class="card">
         <a href="article.html">
           <object type="image/svg+xml" data="resources/enviroment.svg"></object>
@@ -193,6 +185,38 @@
           </div>
         </a>
       </article>
+    </div>
+  </div>
+</section>
+<section id="vote-section" class="py-2">
+  <div class="container">
+    <h2>What News Category Interests You the Most?</h2>
+    <form id="vote-form">
+      <div class="vote-options">
+        <label>
+          <input type="radio" name="category" value="Sports"> Sports
+        </label>
+        <label>
+          <input type="radio" name="category" value="Technology"> Technology
+        </label>
+        <label>
+          <input type="radio" name="category" value="Health"> Health
+        </label>
+        <label>
+          <input type="radio" name="category" value="Politics"> Politics
+        </label>
+        <label>
+          <input type="radio" name="category" value="Entertainment"> Entertainment
+        </label>
+        <label>
+          <input type="radio" name="category" value="Science"> Science
+        </label>
+      </div>
+      <button type="submit" class="btn">Vote</button>
+    </form>
+    <div id="vote-results" class="hidden">
+      <h3>Results:</h3>
+      <ul id="results-list"></ul>
     </div>
   </div>
 </section>
