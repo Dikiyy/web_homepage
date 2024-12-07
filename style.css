@@ -113,15 +113,62 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
   transform: translateY(-5px);
 }
+.categories-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.categories-left,
+.categories-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.category {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.category:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* Заголовок Hottest News */
 .hottest-news {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem 0;
-  color: #ff4c4c;
+  font-size: 2rem;
+  color: var(--accent-color);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .categories-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .categories-left,
+  .categories-right {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .hottest-news {
+    margin: 1rem 0;
+  }
 }
 /* Most Read Articles Section */
 #most-read-articles {
