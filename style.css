@@ -123,6 +123,65 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* Most Read Articles Section */
+#most-read-articles {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+#most-read-articles .container {
+  text-align: center;
+}
+
+#most-read-articles .section-title {
+  font-size: 2rem;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+#most-read-articles .most-read-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+#most-read-articles .most-read-card {
+  background: #fff;
+  border: 1px solid var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+#most-read-articles .most-read-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#most-read-articles .most-read-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#most-read-articles .most-read-card div {
+  padding: 1rem;
+}
+
+#most-read-articles .most-read-card h3 {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+
+#most-read-articles .most-read-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
 
 #showcase {
   display: flex;
