@@ -151,6 +151,58 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--secondary-color);
 }
 
+#main-nav .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-nav .search-bar input {
+  width: 200px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--dark-color);
+  background-color: #ffffff;
+  outline: none;
+}
+
+#main-nav .search-bar input::placeholder {
+  color: #999;
+}
+
+#main-nav .search-bar input:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+#main-nav .search-bar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease;
+}
+
+#main-nav .search-bar button:hover {
+  background-color: var(--accent-color);
+}
+
+#main-nav .search-bar button i {
+  font-size: 1rem;
+}
+
 #main-nav {
   height: 120px;
   display: flex;
