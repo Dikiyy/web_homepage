@@ -4,6 +4,7 @@
   --light-color: #f8f9fa;
   --dark-color: #212529;
   --accent-color: #ffc107;
+  --accent-color-warning: #ff0000;
   --max-width: 1200px;
   --transition-speed: 0.3s;
   --font-family: 'Roboto', sans-serif;
@@ -143,16 +144,15 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-/* Заголовок Hottest News */
+
 .hottest-news {
   font-size: 2rem;
-  color: var(--accent-color);
+  color: var(--accent-color-warning);
   text-transform: uppercase;
   margin: 0 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .categories-wrapper {
     flex-direction: column;
@@ -488,7 +488,7 @@ footer input[type="submit"]:hover {
 
 @media (max-width: 768px) {
   #main-nav .search-bar {
-    display: none;
+    display: flex;
   }
 
   #main-nav .container {
@@ -557,5 +557,41 @@ footer input[type="submit"]:hover {
 
   #main-nav ul.active {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card object {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card h3,
+  .card p {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .card p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .container {
+    padding: 0 10px
   }
 }
