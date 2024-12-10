@@ -363,14 +363,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-nav ul li a {
+  display: flex;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
   transition: background var(--transition-speed) ease;
+  align-items: center;
 }
 
 #main-nav ul li a:hover {
-  background: var(--light-color);
+  background: var(--accent-color);
+  color: var(--light-color);
 }
 
 #home-articles .articles-container {
