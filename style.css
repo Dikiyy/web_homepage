@@ -499,6 +499,11 @@ footer input[type="submit"]:hover {
   background-color: var(--accent-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.btn-join:hover {
+  color: var(--light-color);
+}
+
 #main-nav .logo img {
   width: 150px;
   height: auto;
